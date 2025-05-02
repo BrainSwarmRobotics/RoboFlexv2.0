@@ -1,0 +1,1 @@
+Invoking command in '/home/muneeb/RoboFlexv2.0/brainswarm_ws/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.neon.kde.org/ https://debuginfod.ubuntu.com/ /usr/bin/cmake --build /home/muneeb/RoboFlexv2.0/brainswarm_ws/build/srdfdom -- -j8 -l8

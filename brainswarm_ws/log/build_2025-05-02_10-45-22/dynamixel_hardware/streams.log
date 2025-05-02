@@ -1,0 +1,47 @@
+[0.033s] Invoking command in '/home/muneeb/RoboFlexv2.0/brainswarm_ws/build/dynamixel_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.neon.kde.org/ https://debuginfod.ubuntu.com/ /usr/bin/cmake /home/muneeb/RoboFlexv2.0/brainswarm_ws/src/dynamixel_hardware -DCMAKE_INSTALL_PREFIX=/home/muneeb/RoboFlexv2.0/brainswarm_ws/install/dynamixel_hardware
+[0.345s] -- The C compiler identification is GNU 13.3.0
+[0.563s] -- The CXX compiler identification is GNU 13.3.0
+[0.590s] -- Detecting C compiler ABI info
+[0.859s] -- Detecting C compiler ABI info - done
+[0.912s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.913s] -- Detecting C compile features
+[0.913s] -- Detecting C compile features - done
+[0.918s] -- Detecting CXX compiler ABI info
+[1.128s] -- Detecting CXX compiler ABI info - done
+[1.177s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.177s] -- Detecting CXX compile features
+[1.178s] -- Detecting CXX compile features - done
+[1.184s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.863s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[2.295s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.609s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.706s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.802s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.894s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.149s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.159s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.419s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")
+[3.472s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13")
+[3.522s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.698s] -- Found rclcpp_lifecycle: 28.1.8 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[3.784s] -- Found hardware_interface: 4.27.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[4.536s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[4.537s]   By not providing "Finddynamixel_workbench_toolbox.cmake" in
+[4.537s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[4.537s] -- Configuring incomplete, errors occurred!
+[4.537s]   configuration file provided by "dynamixel_workbench_toolbox", but CMake did
+[4.537s]   not find one.
+[4.538s] 
+[4.538s]   Could not find a package configuration file provided by
+[4.538s]   "dynamixel_workbench_toolbox" with any of the following names:
+[4.538s] 
+[4.538s]     dynamixel_workbench_toolboxConfig.cmake
+[4.538s]     dynamixel_workbench_toolbox-config.cmake
+[4.538s] 
+[4.538s]   Add the installation prefix of "dynamixel_workbench_toolbox" to
+[4.539s]   CMAKE_PREFIX_PATH or set "dynamixel_workbench_toolbox_DIR" to a directory
+[4.539s]   containing one of the above files.  If "dynamixel_workbench_toolbox"
+[4.539s]   provides a separate development package or SDK, be sure it has been
+[4.539s]   installed.
+[4.539s] 
+[4.539s] [0m

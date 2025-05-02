@@ -1,0 +1,33 @@
+[0.023s] Invoking command in '/home/muneeb/RoboFlexv2.0/brainswarm_ws/build/dynamixel_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.neon.kde.org/ https://debuginfod.ubuntu.com/ /usr/bin/cmake /home/muneeb/RoboFlexv2.0/brainswarm_ws/src/dynamixel_hardware -DCMAKE_INSTALL_PREFIX=/home/muneeb/RoboFlexv2.0/brainswarm_ws/install/dynamixel_hardware
+[0.037s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.441s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.492s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.502s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.518s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.621s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.623s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.761s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.850s] -- Found rclcpp_lifecycle: 28.1.8 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[0.908s] -- Found hardware_interface: 4.27.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[1.192s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[1.192s]   By not providing "Finddynamixel_workbench_toolbox.cmake" in
+[1.192s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[1.192s]   configuration file provided by "dynamixel_workbench_toolbox", but CMake did
+[1.192s]   not find one.
+[1.192s] 
+[1.192s]   Could not find a package configuration file provided by
+[1.193s]   "dynamixel_workbench_toolbox" with any of the following names:
+[1.193s] 
+[1.193s]     dynamixel_workbench_toolboxConfig.cmake
+[1.193s]     dynamixel_workbench_toolbox-config.cmake
+[1.193s] 
+[1.193s]   Add the installation prefix of "dynamixel_workbench_toolbox" to
+[1.193s]   CMAKE_PREFIX_PATH or set "dynamixel_workbench_toolbox_DIR" to a directory
+[1.193s]   containing one of the above files.  If "dynamixel_workbench_toolbox"
+[1.194s]   provides a separate development package or SDK, be sure it has been
+[1.194s]   installed.
+[1.194s] 
+[1.194s] [0m
+[1.194s] -- Configuring incomplete, errors occurred!
+[1.205s] Invoked command in '/home/muneeb/RoboFlexv2.0/brainswarm_ws/build/dynamixel_hardware' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.neon.kde.org/ https://debuginfod.ubuntu.com/ /usr/bin/cmake /home/muneeb/RoboFlexv2.0/brainswarm_ws/src/dynamixel_hardware -DCMAKE_INSTALL_PREFIX=/home/muneeb/RoboFlexv2.0/brainswarm_ws/install/dynamixel_hardware

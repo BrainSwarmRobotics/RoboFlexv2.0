@@ -1,0 +1,6 @@
+[31mCMake Error at /usr/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:218 (configure_file):
+  No such file or directory
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+[0m
