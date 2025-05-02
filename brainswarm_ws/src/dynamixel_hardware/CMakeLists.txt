@@ -22,6 +22,7 @@ find_package(rclcpp_lifecycle REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 find_package(hardware_interface REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(dynamixel_workbench_toolbox REQUIRED)
 
 add_library(
   ${PROJECT_NAME}
@@ -40,6 +41,7 @@ ament_target_dependencies(
   lifecycle_msgs
   hardware_interface
   pluginlib
+  dynamixel_workbench_toolbox
 )
 
 
@@ -75,6 +77,7 @@ ament_export_dependencies(
   rclcpp
   hardware_interface
   pluginlib
+  dynamixel_workbench_toolbox
 )
 
 ament_package()

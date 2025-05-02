@@ -42,8 +42,8 @@
 ---
 
 ## 🖥️ Software Stack
-- **Operating System:** Ubuntu 24.04 (Recommended)
-- **Robot Middleware:** ROS 2 (Jazzy)
+- **Operating System:** Ubuntu 22.04 (Recommended)
+- **Robot Middleware:** ROS 2 (Humble)
 - **Motion Planning:** MoveIt 2
 - **Simulation:** Gazebo / RViz
 - **Microcontroller Firmware:** Micro-ROS on ESP32
@@ -54,7 +54,7 @@
 ## 🚀 Installation Guide
 ### 1️⃣ Install ROS 2
 Follow the official ROS 2 installation guide:  
-🔗 [https://docs.ros.org/en/jazzy/Installation.html](https://docs.ros.org/en/humble/Installation.html)
+🔗 [https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html)
 
 ### 2️⃣ Install Micro-ROS on ESP32
 
@@ -69,18 +69,18 @@ https://github.com/munn33b/esp32-microROS/blob/main/README.md
 ### 3️⃣ Clone This Repository
 
 ```bash
-git clone https://github.com/BrainSwarmRobotics/RoboFlexv2.0
+git clone https://github.com/BrainSwarmRobotics/Zero2RoboticArm-6_DOF_Robotic_Arm_MicroROS_ROS2
 ```
 
 ### 4️⃣ Install Dependencies
 
 ```bash
-sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers ros-jazzy-ros-gz ros-humble-gz-ros2-control ros-humble-ros-gz-sim
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-ros-ign ros-humble-ign-ros2-control ros-humble-ros-ign-gazebo
 ```
 
 ### 4️⃣ Configure Packages
 
-Go to `brainswarm_ws/src/roboflex_description/launch`. Modify **Line 45** and **Line 48** with appropriate Paths.
+Go to `brainswarm_ws/src/brainswarm_robotic_arm/launch`. Modify **Line 45** and **Line 48** with appropriate Paths.
 
 ### 4️⃣ Build Workspace
 
@@ -101,24 +101,24 @@ colcon build
 In terminal, run the following command to start the simulation
 
 ```bash
-ros2 launch roboflex_description simulation.launch.py
+ros2 launch brainswarm_robotic_arm simulation.launch.py
 ```
 
 #### Starting Interface for Real Hardware Integration
 
 ```bash
-ros2 launch roboflex_description real_hardware.launch.py
+ros2 launch brainswarm_robotic_arm real_hardware.launch.py
 ```
 
 For starting controllers, you need to run following script, inside the root of your `ROS2 Workspace` run following command
 
 ```
-./src/roboflex_description/start_controllers
+./src/brainswarm_robotic_arm/start_controllers
 ```
 
 It will start all controllers
 
-To run the complete robotic Arm system, make sure you have `micro_ros_agent` running. In the `Firmware/six_motors_microROS_udp4_millis_and_map_servo_driver/six_motors_microROS_udp4_millis_and_map_servo_driver.ino` file, modify line 81 with appropriate values.
+To run the complete robotic Arm system, make sure you have `micro_ros_agent` running. In the `Firmware/six_motors_microROS_udp4_millis_and_map_servo_driver/six_motors_microROS_udp4_millis_and_map_servo_driver.ino` file, modify line 84 with appropriate values.
 
 After that, run the Micro ROS Agent on terminal
 

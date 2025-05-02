@@ -48,8 +48,8 @@ def generate_launch_description():
     workspace_src_path = os.path.abspath(os.path.join(bras_robot_description_path, "../../../roboflex_description/share"))
 
 
-    os.environ["GZ_SIM_RESOURCE_PATH"] = f"{models_path}:{workspace_src_path}"
-    print (os.environ["GZ_SIM_RESOURCE_PATH"])
+    os.environ["IGN_GAZEBO_RESOURCE_PATH"] = f"{models_path}:{workspace_src_path}"
+    print (os.environ["IGN_GAZEBO_RESOURCE_PATH"])
 
 
     world_file = os.path.join(
@@ -79,18 +79,18 @@ def generate_launch_description():
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        arguments=['/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock'],
-        output='screen'
+        name="camera_node",
+        arguments=['/camera@sensor_msgs/msg/Image@ignition.msgs.Image'],
     )
 
     ign_gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('ros_gz_sim'),
+            get_package_share_directory('ros_ign_gazebo'),
             'launch',
-            'gz_sim.launch.py'
+            'ign_gazebo.launch.py'
         )]),
         launch_arguments={
-                'gz_args': f' -r -v 4 {world_file} '
+                'ign_args': f' -r -v 4 {world_file} '
         }.items()
     )
 

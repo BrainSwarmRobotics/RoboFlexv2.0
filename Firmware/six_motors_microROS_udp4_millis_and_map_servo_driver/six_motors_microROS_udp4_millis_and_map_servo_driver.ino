@@ -78,7 +78,7 @@ void setup() {
     Serial.begin(115200);
     Serial.println("Starting Micro-ROS ESP32 Node");
 
-    set_microros_wifi_transports("<SSID>", "<Password>", "<MicroROS Agent IP>", <MicroROS Agent Port>);
+    set_microros_wifi_transports("Noectic", "islamabad", "172.20.10.2", 8888);
 
     Wire.begin(I2C_SDA, I2C_SCL);
     pwm.begin();
