@@ -17,6 +17,11 @@ install(PROGRAMS
 )
 
 install(PROGRAMS
+  scripts/compute_transforms  # Your Python script path
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
   scripts/gripper_trajectory_controller  # Your Python script path
   DESTINATION lib/${PROJECT_NAME}
 )
