@@ -4,21 +4,21 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="real_robot_hardware">
-  <link
+ <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.0510833714941891 -0.000382491207532185 0.0217127988867176"
+        xyz="-0.0198856207674204 -0.00141287834695657 0.0217127988880841"
         rpy="0 0 0" />
       <mass
-        value="0.134010546349551" />
+        value="0.134010546144028" />
       <inertia
-        ixx="0.000135168968386867"
-        ixy="-6.91009818544603E-06"
-        ixz="-4.27277612477508E-07"
-        iyy="0.000264392316906781"
-        iyz="2.33805747583068E-06"
-        izz="0.000360228823068858" />
+        ixx="0.000135168968359235"
+        ixy="-6.91009827779043E-06"
+        ixz="-4.27277665593455E-07"
+        iyy="0.000264392316474499"
+        iyz="2.33805748764974E-06"
+        izz="0.000360228822623865" />
     </inertial>
     <visual>
       <origin
@@ -48,17 +48,17 @@
     name="link_1">
     <inertial>
       <origin
-        xyz="-0.000504987369576881 -0.00192015564628449 0.0125056781091124"
+        xyz="-0.00073997712798396 -0.00184239661298101 0.0040056795424445"
         rpy="0 0 0" />
       <mass
-        value="0.0638354222165659" />
+        value="0.063835393644477" />
       <inertia
-        ixx="2.03092324202962E-05"
-        ixy="1.97476549743696E-08"
-        ixz="-7.97162472228022E-08"
-        iyy="3.76044775767883E-05"
-        iyz="7.57521345651875E-08"
-        izz="3.90116541064214E-05" />
+        ixx="2.05819135406668E-05"
+        ixy="2.15457273252048E-06"
+        ixz="-6.96555382329067E-08"
+        iyy="3.73317819706095E-05"
+        iyz="8.508005425439E-08"
+        izz="3.90116421726318E-05" />
     </inertial>
     <visual>
       <origin
@@ -88,8 +88,8 @@
     name="joint_1"
     type="revolute">
     <origin
-      xyz="0.070969 0.0010304 0.043"
-      rpy="0 0 0.1111" />
+      xyz="0 0 0.0515"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -99,24 +99,24 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="100"
-      velocity="10" />
+      effort="1000"
+      velocity="1000" />
   </joint>
   <link
     name="link_2">
     <inertial>
       <origin
-        xyz="0.031343593606014 -0.033194511695909 0.0346893395786339"
+        xyz="-0.0220592800955566 -0.0339840872734844 0.0405723636080762"
         rpy="0 0 0" />
       <mass
-        value="0.0748071563743272" />
+        value="0.0748071610042354" />
       <inertia
-        ixx="5.72586798767209E-05"
-        ixy="-2.17172463324134E-06"
-        ixz="-3.11579534120587E-05"
-        iyy="8.85941858983056E-05"
-        iyz="-1.82503441571111E-06"
-        izz="4.23555093688654E-05" />
+        ixx="7.16078709909108E-05"
+        ixy="1.32335423542845E-06"
+        ixz="2.35491971948772E-05"
+        iyy="8.8624298839474E-05"
+        iyz="-9.88088305055191E-07"
+        izz="2.79762099807478E-05" />
     </inertial>
     <visual>
       <origin
@@ -146,35 +146,35 @@
     name="joint_2"
     type="revolute">
     <origin
-      xyz="0 0.0325 0.0325"
-      rpy="0 0 -0.1111" />
+      xyz="0.0040533 0.032246 0.024"
+      rpy="0 0 0" />
     <parent
       link="link_1" />
     <child
       link="link_2" />
     <axis
-      xyz="0 1 0" />
+      xyz="0.12444 0.99223 0" />
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="100"
-      velocity="10" />
+      effort="1000"
+      velocity="1000" />
   </joint>
   <link
     name="link_3">
     <inertial>
       <origin
-        xyz="0.0197629660433578 -0.030027785532378 -0.0317187827668957"
+        xyz="0.0396240818912382 -0.0328556511393453 -0.00593954031553318"
         rpy="0 0 0" />
       <mass
-        value="0.0681820843287335" />
+        value="0.0758174776124458" />
       <inertia
-        ixx="6.62088304393394E-05"
-        ixy="-1.58912620866844E-06"
-        ixz="-9.02679832507164E-07"
-        iyy="8.33946612488642E-05"
-        iyz="9.8047855071422E-07"
-        izz="2.58153176561903E-05" />
+        ixx="4.96269043552773E-05"
+        ixy="-1.7723547111495E-07"
+        ixz="3.04448966068349E-05"
+        iyy="0.000109254251349246"
+        iyz="4.53261122968051E-07"
+        izz="6.91382665468306E-05" />
     </inertial>
     <visual>
       <origin
@@ -187,7 +187,7 @@
       <material
         name="">
         <color
-          rgba="1 0.549019607843137 0 1" />
+          rgba="1 0.549019607843137 0 0.25" />
       </material>
     </visual>
     <collision>
@@ -204,8 +204,8 @@
     name="joint_3"
     type="revolute">
     <origin
-      xyz="0.055963 0.0072494 0.070118"
-      rpy="0 0 0" />
+      xyz="-0.034874 0.0053814 0.0828"
+      rpy="0 0 -0.12476" />
     <parent
       link="link_2" />
     <child
@@ -215,24 +215,24 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="100"
-      velocity="10" />
+      effort="1000"
+      velocity="1000" />
   </joint>
   <link
-    name="gripper_body">
+    name="gripper_body_link">
     <inertial>
       <origin
-        xyz="0.00366792697051652 -0.0305352088790062 -0.00315927269818361"
+        xyz="0.0071443767351853 -0.0316783279545622 -0.0228792470549594"
         rpy="0 0 0" />
       <mass
-        value="0.0278753951925544" />
+        value="0.0774670735080687" />
       <inertia
-        ixx="8.84531615559998E-06"
-        ixy="5.0578418536861E-07"
-        ixz="-8.00380587396263E-08"
-        iyy="4.01315758864673E-06"
-        iyz="4.69313260641993E-07"
-        izz="9.22963344114184E-06" />
+        ixx="4.69391687400588E-05"
+        ixy="-8.5383245069063E-07"
+        ixz="8.65098318178043E-06"
+        iyy="4.11454270619738E-05"
+        iyz="2.77915843402062E-06"
+        izz="2.20817960680195E-05" />
     </inertial>
     <visual>
       <origin
@@ -240,12 +240,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboflex_description/meshes/gripper_body.STL" />
+          filename="package://roboflex_description/meshes/gripper_body_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="1 0.549019607843137 0 1" />
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
       </material>
     </visual>
     <collision>
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboflex_description/meshes/gripper_body.STL" />
+          filename="package://roboflex_description/meshes/gripper_body_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -262,93 +262,35 @@
     name="joint_gripper_body"
     type="revolute">
     <origin
-      xyz="0.0047405 0.001535 -0.089868"
+      xyz="0.087497 0.001 -0.052186"
       rpy="0 0 0" />
     <parent
       link="link_3" />
     <child
-      link="gripper_body" />
+      link="gripper_body_link" />
     <axis
-      xyz="0.11087 -0.99383 0" />
+      xyz="0 1 0" />
     <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="100"
-      velocity="10" />
-  </joint>
-  <link
-    name="gripper_right_link">
-    <inertial>
-      <origin
-        xyz="0.00711515579656138 -0.0468297685812532 -0.0258977245580506"
-        rpy="0 0 0" />
-      <mass
-        value="0.00458915923311391" />
-      <inertia
-        ixx="2.36373443416885E-07"
-        ixy="-4.01717813265858E-08"
-        ixz="-1.70221000472395E-08"
-        iyy="5.87615385191018E-07"
-        iyz="3.99508874235914E-09"
-        izz="4.30778221373743E-07" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://roboflex_description/meshes/gripper_right_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://roboflex_description/meshes/gripper_right_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_gripper_right_link"
-    type="prismatic">
-    <origin
-      xyz="0 0 0"
-      rpy="0 0 0" />
-    <parent
-      link="gripper_body" />
-    <child
-      link="gripper_right_link" />
-    <axis
-      xyz="0.11087 -0.99383 0" />
-    <limit
-      lower="0"
-      upper="1.57"
-      effort="100"
-      velocity="10" />
+      lower="-1"
+      upper="1"
+      effort="1000"
+      velocity="1000" />
   </joint>
   <link
     name="gripper_left_link">
     <inertial>
       <origin
-        xyz="0.00369787838316388 -0.0161978471370787 -0.025897424255565"
+        xyz="0.0227317322742014 -0.0282591595043374 -0.0735491431567077"
         rpy="0 0 0" />
       <mass
-        value="0.00458928127195508" />
+        value="0.00458928127195506" />
       <inertia
-        ixx="2.36180755715519E-07"
-        ixy="-3.9233358211967E-08"
-        ixz="-1.57229351675509E-08"
-        iyy="5.87866257941228E-07"
-        iyz="-7.6558614680683E-09"
-        izz="4.30804969344897E-07" />
+        ixx="2.48457346408623E-07"
+        ixy="1.75608919703415E-09"
+        ixz="-5.74309565861384E-08"
+        iyy="5.92189254891711E-07"
+        iyz="-5.61714965689839E-09"
+        izz="4.14205381701304E-07" />
     </inertial>
     <visual>
       <origin
@@ -375,22 +317,80 @@
     </collision>
   </link>
   <joint
-    name="joint_gripper_left_link"
+    name="joint_gripper_left_part"
     type="prismatic">
     <origin
       xyz="0 0 0"
       rpy="0 0 0" />
     <parent
-      link="gripper_body" />
+      link="gripper_body_link" />
     <child
       link="gripper_left_link" />
     <axis
-      xyz="0.11087 -0.99383 0" />
+      xyz="0 1 0" />
+    <limit
+      lower="-0.4"
+      upper="0"
+      effort="1000"
+      velocity="1000" />
+  </joint>
+  <link
+    name="gripper_right_link">
+    <inertial>
+      <origin
+        xyz="0.0227318221834384 -0.0403429519495776 -0.0735494307466795"
+        rpy="0 0 0" />
+      <mass
+        value="0.00458915923311391" />
+      <inertia
+        ixx="2.48437178254512E-07"
+        ixy="-1.75377298952243E-09"
+        ixz="-5.74288842520944E-08"
+        iyy="5.92150639018822E-07"
+        iyz="5.60974087364876E-09"
+        izz="4.14179232708343E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboflex_description/meshes/gripper_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboflex_description/meshes/gripper_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gripper_right_part"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_body_link" />
+    <child
+      link="gripper_right_link" />
+    <axis
+      xyz="0 1 0" />
     <limit
       lower="0"
-      upper="1.57"
-      effort="100"
-      velocity="10" />
+      upper="0.4"
+      effort="1000"
+      velocity="1000" />
   </joint>
 
 
@@ -440,7 +440,7 @@
             </state_interface>
         </joint>
 
-        <joint name="joint_gripper_left_link">
+        <joint name="joint_gripper_left_part">
             <command_interface name="position">
                 <param name="min">0</param>
                 <param name="max">1.57</param>

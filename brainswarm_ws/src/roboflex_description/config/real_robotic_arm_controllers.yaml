@@ -41,7 +41,7 @@ real_robot:
       type: joint_trajectory_controller/JointTrajectoryController
 
       joints:
-        - joint_gripper_left_link
+        - joint_gripper_left_part
 
       command_interfaces:
         - position

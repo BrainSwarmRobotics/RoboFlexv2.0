@@ -36,7 +36,7 @@ gripper_controller:
   ros__parameters:
     type: position_controllers/GripperActionController
 
-    joint: 'joint_gripper_left_link'
+    joint: 'joint_gripper_left_part'
 
     command_interfaces:
       - position
