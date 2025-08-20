@@ -35,7 +35,7 @@ class GripperActionClient(Node):
     def joint_state_callback(self, msg):
         # Check if the joint 'joint_gripper_left_link' is in the incoming message
         try:
-            index = msg.name.index('joint_gripper_left_link')
+            index = msg.name.index('joint_gripper_left_part')
         except ValueError:
             self.get_logger().warn("Joint 'joint_gripper_left_link' not found in /joint_states")
             return
