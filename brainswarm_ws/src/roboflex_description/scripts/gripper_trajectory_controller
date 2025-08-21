@@ -51,7 +51,7 @@ class GripperActionClient(Node):
         goal_msg = FollowJointTrajectory.Goal()
 
         # For the gripper, we typically have a single joint in the trajectory.
-        goal_msg.trajectory.joint_names = ['joint_gripper_left_link']
+        goal_msg.trajectory.joint_names = ['joint_gripper_left_part']
 
         # Create a JointTrajectoryPoint with the gripper position
         point = JointTrajectoryPoint()
