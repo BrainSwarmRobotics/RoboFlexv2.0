@@ -411,8 +411,8 @@
 
         <joint name="joint_1">
             <command_interface name="position">
-                <param name="min">0</param>
-                <param name="max">3.14</param>
+                <param name="min">-1.57</param>
+                <param name="max">1.57</param>
             </command_interface>
             <state_interface name="position">
                 <param name="initial_value">0.0</param>

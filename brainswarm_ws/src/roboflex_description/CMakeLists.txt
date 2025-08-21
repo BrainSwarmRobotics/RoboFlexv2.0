@@ -12,6 +12,11 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(PROGRAMS
+  scripts/pose_estimation  # Your Python script path
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
   scripts/trajectory_controller  # Your Python script path
   DESTINATION lib/${PROJECT_NAME}
 )
